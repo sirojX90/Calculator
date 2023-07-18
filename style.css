@@ -1,0 +1,72 @@
+/* Calculator CSS code */
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/fon.avif);
+}
+.colculator{
+    background-color: rgb(89, 86, 86);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+#result{
+    width: 100%;
+    padding: 10px;
+    font-size: 50px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 10px;
+}
+.butons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+button{
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.clear{
+    background-color: #f86760;
+    color: #fff;
+}
+.clear:hover{
+    background-color: #ed918c;
+    color: #fff;
+}
+.operator{
+    background-color: #0074d9;
+    color: #fff;
+}
+.operator:hover{
+    background-color: #509cde;
+    color: #fff;
+}
+.equals{
+    background-color: #6db48b;
+    grid-row: span 3;
+    color: #fff;
+    font-size: 60px;
+}
+.equals:hover{
+    background-color: #7ca38c;
+    color: #fff;
+}
+.number:hover{
+    background-color: rgb(208, 206, 206);
+}
